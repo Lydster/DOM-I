@@ -55,6 +55,7 @@ topNav[4].textContent = siteContent.nav["nav-item-5"]
 topNav[5].textContent = siteContent.nav["nav-item-6"]
 
 
+
 let head1 = document.getElementsByTagName("h1");
 head1[0].innerHTML = "DOM<br>Is<br>Awesome"
 
