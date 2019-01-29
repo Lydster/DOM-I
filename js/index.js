@@ -59,7 +59,8 @@ let head1 = document.getElementsByTagName("h1");
 head1[0].innerHTML = "DOM<br>Is<br>Awesome"
 
 let btn = document.getElementsByTagName("button");
-btn.textContent = "Get Started!"
+btn.textContent = siteContent["cta"]["button"]
+
 
 let ctaimg = document.getElementById("cta-img");
 ctaimg.setAttribute('src', siteContent["cta"]["img-src"])
@@ -84,3 +85,17 @@ toptext[1].textContent = siteContent["main-content"]["about-content"]
 toptext[2].textContent = siteContent["main-content"]["services-content"]
 toptext[3].textContent = siteContent["main-content"]["product-content"]
 toptext[4].textContent = siteContent["main-content"]["vision-content"]
+
+
+//CONTACT
+
+let contactH = document.querySelector(".contact h4");
+contactH.textContent = siteContent["contact"]["contact-h4"]
+
+let contactinfo = document.querySelectorAll(".contact p");
+contactinfo[0].textContent = siteContent["contact"]["address"]
+contactinfo[1].textContent = siteContent["contact"]["phone"]
+contactinfo[2].textContent = siteContent["contact"]["email"]
+
+let footer1 = document.querySelectorAll("footer p");
+footer1[0].textContent = siteContent["footer"]["copyright"]
