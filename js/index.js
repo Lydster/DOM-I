@@ -58,8 +58,8 @@ topNav[5].textContent = siteContent.nav["nav-item-6"]
 let head1 = document.getElementsByTagName("h1");
 head1[0].innerHTML = "DOM<br>Is<br>Awesome"
 
-let btn = document.getElementsByTagName("button");
-btn.textContent = siteContent["cta"]["button"]
+let btn = document.querySelector("button");
+btn.textContent = "Get Started"
 
 
 let ctaimg = document.getElementById("cta-img");
@@ -93,7 +93,7 @@ let contactH = document.querySelector(".contact h4");
 contactH.textContent = siteContent["contact"]["contact-h4"]
 
 let contactinfo = document.querySelectorAll(".contact p");
-contactinfo[0].textContent = siteContent["contact"]["address"]
+contactinfo[0].innerHTML = "123 Way 456 Street <br>Somewhere, USA"
 contactinfo[1].textContent = siteContent["contact"]["phone"]
 contactinfo[2].textContent = siteContent["contact"]["email"]
 
